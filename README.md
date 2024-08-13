@@ -84,3 +84,4 @@ const routes = {
 # Resources
 - favicon : https://upload.wikimedia.org/wikipedia/commons/3/3e/AIGA_information.svg, AIGA (American Institute of Graphic Arts)# web2_exam_janv2024
 # examen_js_janv2024_v2
+# examen_js_janv2024_v2
