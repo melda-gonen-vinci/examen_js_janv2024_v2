@@ -17,6 +17,7 @@ async function displayQuotes() {
 
         let currentQuoteIndex = 0;
         const usedQuotes = new Set();
+        let intervalId;
 
         const main = document.querySelector('main');
         main.innerHTML = '';
@@ -70,8 +71,10 @@ async function displayQuotes() {
             carouselInner.appendChild(carouselItem);
         }
 
+        const intervalValue = parseInt(localStorage.getItem('quoteDisplayInterval'), 10) || 5000;
+
         displayNextQuote();
-        intervalId = setInterval(displayNextQuote, 5000);
+        intervalId = setInterval(displayNextQuote, intervalValue);
         localStorage.setItem('intervalId', intervalId);
     } catch (error) {
         console.error('Error fetching quotes:', error);

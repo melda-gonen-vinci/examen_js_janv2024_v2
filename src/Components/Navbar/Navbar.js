@@ -32,7 +32,10 @@ const Navbar = () => {
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#" data-uri="/quotecarousel">Carrousel de citations</a>
-              </li>                    
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" data-uri="/manage-carousel">Configuration du carrousel</a>
+              </li>                      
             </ul>
           </div>
         </div>
